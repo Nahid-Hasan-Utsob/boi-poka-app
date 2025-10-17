@@ -36,38 +36,38 @@ export default function Header() {
           <a className="btn btn-ghost text-xl">Book Vibe</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
+          <ul className="menu menu-horizontal px-1 gap-3.5">
+            <li  className="text-[20px] ">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "border border-[#23BE0A] text-[#23BE0A]"
-                    : "  border border-white"
+                    ? "border border-[#23BE0A] text-[#23BE0A] py-2 px-5"
+                    : "  border border-white hover:bg-none py-2 px-5"
                 }
               >
                 Home
               </NavLink>
             </li>
-            <li>
+            <li className="text-[20px] ">
               <NavLink
                 to="/bookList"
                 className={({ isActive }) =>
                   isActive
-                    ? "border border-[#23BE0A] text-[#23BE0A]"
-                    : "  border border-white"
+                    ? "border border-[#23BE0A] text-[#23BE0A] py-2 px-5"
+                    : "  border border-white py-2 px-5"
                 }
               >
                 Listed Books
               </NavLink>
             </li>
-            <li>
+            <li className="text-[20px] ">
               <NavLink
                 to="/readPages"
                 className={({ isActive }) =>
                   isActive
-                    ? "border border-[#23BE0A] text-[#23BE0A]"
-                    : "  border border-white"
+                    ? "border border-[#23BE0A] text-[#23BE0A] py-2 px-5"
+                    : "  border border-white py-2 px-5"
                 }
               >
                 Pages to Read
