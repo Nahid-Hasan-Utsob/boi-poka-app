@@ -1,9 +1,10 @@
 import React from "react";
 import Herobanner from "../../assets/pngwing 1.png";
+import Books from "../Books/Books";
 
 export default function Home() {
   return (
-    <div>
+    <section>
       <div className="hero  min-h-screen ">
         <div className="hero-content flex-col lg:flex-row-reverse lg:justify-around justify-center">
           <div>
@@ -25,6 +26,7 @@ export default function Home() {
           <div className="text-center text-4xl font-semibold lg:pt-12 pt-4">
             <h2>Books</h2>
           </div>
-    </div>
+          <Books></Books>
+    </section>
   );
 }
